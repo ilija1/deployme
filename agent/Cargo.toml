@@ -1,0 +1,16 @@
+[package]
+name = "deployme-agent"
+version = "0.1.0"
+authors = ["Ilija Stevcev <ilija1@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+config = "*"
+serde = { version = "1.0.93", features = ["derive"] }
+signal-hook = "*"
+crossbeam-channel = "*"
+log = "*"
+log4rs = "*"
+reqwest = "*"
+serde_json = "*"
+pnet = "*"

@@ -1,0 +1,42 @@
+version: "3"
+services:
+  api:
+    build: ./api/DeployMe.Api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+  redis:
+    image: redis:alpine
+  api-proxy:
+    image: nginx:latest
+    volumes:
+      - ./api/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 8080:80
+  web:
+    build: ./web
+    environment:
+      - APP_API_ENDPOINT=http://api
+  web-proxy:
+    image: nginx:latest
+    volumes:
+      - ./web/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 8000:80
+  agent1:
+    build: ./agent
+    ports:
+      - 9000:80
+    environment:
+      - APP_API_ENDPOINT=http://api
+  agent2:
+    build: ./agent
+    ports:
+      - 9001:80
+    environment:
+      - APP_API_ENDPOINT=http://api
+  agent3:
+    build: ./agent
+    ports:
+      - 9002:80
+    environment:
+      - APP_API_ENDPOINT=http://api
