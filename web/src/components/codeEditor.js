@@ -19,18 +19,16 @@ class CodeEditor extends Component {
 StartCommands:
   - echo "starting nginx!" >> /var/log/some.log
   - service nginx restart
-StopCommands:
-  - echo "stopping nginx!" >> /var/log/some.log
-  - service nginx stop
 UninstallCommands:
-  - apt-get remove -y nginx`
+  - apt-get remove -y nginx
+`
   }
 
   render() {
     return (
       <ReactAce
         mode="yaml"
-        theme="monokai"
+        theme="dawn"
         setReadOnly={false}
         onChange={this.onChange}
         setValue={this.startingText}
