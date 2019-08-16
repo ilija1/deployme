@@ -1,0 +1,12 @@
+source https://api.nuget.org/v3/index.json
+
+nuget DeployMe.Extensions.Json 1.0.0
+nuget DeployMe.Http 1.0.1
+nuget DeployMe.Http.WebApiExtensions 1.0.1
+nuget Microsoft.AspNetCore.App
+nuget Microsoft.AspNetCore.Mvc.Formatters.Json 2.1.0
+nuget Microsoft.AspNetCore.Mvc.ViewFeatures 2.1.0
+nuget Microsoft.Extensions.Configuration 2.1.0
+nuget Newtonsoft.Json 12.0.2
+nuget StackExchange.Redis.Extensions.Newtonsoft 5.0.3
+nuget YamlDotNet 6.1.1

@@ -1,0 +1,5 @@
+Microsoft.AspNetCore.App
+StackExchange.Redis.Extensions.Newtonsoft
+DeployMe.Extensions.Json
+DeployMe.Http.WebApiExtensions
+YamlDotNet
