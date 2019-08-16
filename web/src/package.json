@@ -19,23 +19,23 @@
     "axios": "^0.19.0",
     "bulma": "^0.7.5",
     "express": "^4.17.1",
-    "next": "^8.1.0",
+    "next": "^9.0.3",
     "pm2": "^3.5.1",
-    "react": "^16.8.6",
+    "react": "^16.9.0",
     "react-ace-editor": "0.0.3",
-    "react-dom": "^16.8.6",
+    "react-dom": "^16.9.0",
     "stylus": "^0.54.5"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
     "cross-env": "^5.2.0",
-    "eslint": "^6.0.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^5.0.0",
-    "eslint-loader": "^2.1.2",
-    "eslint-plugin-import": "^2.17.3",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.1",
+    "eslint-plugin-react": "^7.14.3",
     "prettier": "^1.18.2"
   }
 }
